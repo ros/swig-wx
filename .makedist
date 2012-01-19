@@ -1,0 +1,24 @@
+#!/bin/bash
+#----------------------------------------------------------------------
+# Cleanup the swig source dir and make a tarball, including binaries
+# for windows which are copied from my windows box.
+
+set -o errexit
+
+LIBDIR=`./swig -swiglib`
+VER=`basename $LIBDIR`
+
+make distclean-objects clean-examples distclean-dead
+./autogen.sh
+
+rm `find . -name "*~"` || true
+rm `find . -name ".#*"` || true
+
+for name in SWIG.exe SWIG13.sln SWIG13.vcproj; do
+    scp -p beast:/PROJECTS/SWIG-$VER/$name .
+done
+
+
+cd ..
+tar --exclude=CVS -czvf SWIG-$VER-wx.tar.gz SWIG-$VER
+
