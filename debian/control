@@ -2,12 +2,12 @@ Source: ros-fuerte-swig-wx
 Section: misc
 Priority: extra
 Maintainer: Dirk Thomas <dthomas@willowgarage.com>
-Build-Depends: debhelper (>= 7.0.50~), autotools
+Build-Depends: debhelper (>= 7.0.50~), build-essential
 Homepage: http://www.swig.org
 Standards-Version: 3.9.2
 
 Package: ros-fuerte-swig-wx
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, autotools
+Depends: ${shlibs:Depends}, ${misc:Depends}, build-essential
 Description: This is a special version of swig needed by wxPython, which is SWIG version 1.3.29 plus some custom patches (explained at http://wxpython.org/builddoc.php). The patched latest version of wxPython SWIG is available at http://wxpython.wxcommunity.com/tools/
 
