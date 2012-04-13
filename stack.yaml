@@ -1,7 +1,7 @@
 Catkin-ProjectName: swig-wx
 Version: 1.3.29
 
-Depends: build-essential
+Depends: 
 
 Description: This is a special version of swig needed by wxPython,
     which is SWIG version 1.3.29 plus some custom patches
