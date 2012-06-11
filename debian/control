@@ -2,8 +2,8 @@ Source: ros-fuerte-swig-wx
 Section: misc
 Priority: extra
 Maintainer: Dirk Thomas <dthomas@willowgarage.com>
-Build-Depends: debhelper (>= 7.0.50~), 
-Homepage: http://www.swig.org
+Build-Depends: debhelper (>= 7.0.50~), ros-fuerte-catkin
+Homepage: http://www.swig.org/
 Standards-Version: 3.9.2
 
 Package: ros-fuerte-swig-wx
