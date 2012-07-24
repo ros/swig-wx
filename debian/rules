@@ -8,7 +8,7 @@ export DH_OPTIONS=-v
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--prefix="/opt/ros/fuerte"
+		--prefix="/opt/ros/groovy"
 
 override_dh_auto_test:
 	echo -- Running tests. Even if one of them fails the build is not canceled.
