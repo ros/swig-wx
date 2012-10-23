@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>swig-wx</name>
+  <version>1.3.29</version>
+  <description>
+    This is a special version of swig needed by wxPython,
+    which is SWIG version 1.3.29 plus some custom patches
+    (explained at http://wxpython.org/builddoc.php).
+    The patched latest version of wxPython SWIG is available at
+    http://wxpython.wxcommunity.com/tools/
+  </description>
+
+  <maintainer email="dthomas@willowgarage.com">Dirk Thomas</maintainer>
+  <maintainer email="wwoodall@willowgarage.com">William Woodall</maintainer>
+  <license>GPL</license>
+  <url type="website">http://wxpython.wxcommunity.com/tools/</url>
+  <url type="repository">https://github.com/ros/swig-wx</url>
+  <url type="bugtracker">https://github.com/ros/swig-wx/issues</url>
+
+  <build_depends>autoconf</build_depends>
+  <build_depends>automake</build_depends>
+  <build_depends>catkin</build_depends>
+</package>
