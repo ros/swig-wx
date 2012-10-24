@@ -17,7 +17,7 @@
   <url type="repository">https://github.com/ros/swig-wx</url>
   <url type="bugtracker">https://github.com/ros/swig-wx/issues</url>
 
-  <build_depends>autoconf</build_depends>
-  <build_depends>automake</build_depends>
-  <build_depends>catkin</build_depends>
+  <build_depend>autoconf</build_depend>
+  <build_depend>automake</build_depend>
+  <build_depend>catkin</build_depend>
 </package>
