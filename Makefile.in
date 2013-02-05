@@ -360,7 +360,7 @@ MKINSTDIRS      = @abs_srcdir@/Tools/config/install-sh -m 0755 -d
 # Use standard autoconf approach to transform executable name using --program-prefix and --program-suffix
 transform	= @program_transform_name@
 
-install: install-main install-lib
+install: install-main install-lib install-package
 	@echo "Installation complete"
 
 install-main:
@@ -374,6 +374,9 @@ lib-languages = gcj typemaps tcl perl5 python guile java mzscheme ruby php4 ocam
 
 lib-modules = std
 
+install-package:
+	@$(MKINSTDIRS) $(DESTDIR)$(SWIG_LIB)
+	$(INSTALL_DATA) $(srcdir)/package.xml $(DESTDIR)$(SWIG_LIB)
 
 install-lib: 
 	@echo "Installing the SWIG library"
